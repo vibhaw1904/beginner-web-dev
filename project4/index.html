@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    <style>*{
+        margin: 0;
+        padding: 0;
+    }
+        body{
+            background: url('img1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .up1{
+           
+            
+            margin-right: 143px;
+        }
+        ul{
+            margin: -28px;
+            list-style-type: none;
+            display: flex;
+            float: right;
+            
+            
+        }
+       ul li{
+        padding: 21px;
+       
+       }
+       ul li a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        transition: all ease 0.3s;
+       }
+       ul li a:hover{
+        color: #1E90FF;
+       }
+       ul li a.active{
+        color: 		#1E90FF;
+       }
+       .logo{
+        width: 30px;
+        height: 30px;
+        
+       }
+       .bottom h2{
+        margin-left: 130px;
+    margin-top: 162px;
+    font-size: 47px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.date{
+    border-radius: 6px;
+    height: 35px;
+    width: 178px;
+    border: none;
+}
+.range{
+    border-radius: 6px;
+    height: 35px;
+    width: 178px;
+    border: none;
+}
+.btn{
+    border-radius: 9px;
+    height: 36px;
+    width: 118px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+}
+.bottom1{
+    margin-left: 129px;
+    padding: 2px;
+    line-height: 100px;
+
+}
+.btn:hover{
+    background-color: white;
+    color: #1E90FF;
+}
+
+       
+    </style>
+</head>
+<body>
+    <div class="up">
+       
+        <nav class="up1">
+           <h3>Explore Tour</h3>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="">Tours</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Advantages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contacts</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="bottom">
+        <h2>The Best Trips  Around Iceland  <br> Begin With us </h2>
+        <div class="bottom1">
+        <input class="date" type="date" placeholder="Date">
+        <input class="range" type="number" placeholder="Your price Range">
+        <button class="btn">Search Tours</button>
+    </div>
+    </div>
+</body>
+</html>

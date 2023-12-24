@@ -1,0 +1,233 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+             padding: 0;
+             box-sizing: border-box;
+             margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        header{
+            background-color: #161616;
+            clip-path:polygon(0 0,100% 0,100% 100%,77% 88%,0 100% ) ;
+            
+        }
+        .container{
+            
+            max-width: 1152px;
+    padding: 0 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 175px;
+    margin-right: 0px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin: 1rem;
+            margin-right: 2rem;
+            text-transform: uppercase;
+            transition: all .3s ease;
+        }
+        a:hover{
+            color: aqua;
+        }
+        .flex{
+            display:  flex;
+        }
+        .items-center{
+           align-items: center;
+        }
+       .justify-between{
+        justify-content: space-between;
+       }
+       header nav{
+        padding: 2rem 0;
+       }
+       .brandig{
+        margin-right: 3rem;
+       }
+       .btn{
+        margin-right: 62px;
+        padding: 0.5rem 1rem;
+       
+        
+        font-size: 1rem;
+        font-weight: 600;
+        border: 2px solid transparent;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all .3s ease;
+
+       }
+       .btn-primary{
+        background-color:rgb(28, 154, 154) ;
+        color: black;
+       }
+       .btn-primary:hover{
+            background: transparent;
+            border-color: rgb(28, 154, 154);
+            color: rgb(28, 154, 154);
+       }
+       .btn-secondary{
+        background: transparent;
+        color:rgb(28, 154, 154) ;
+        border-color: rgb(28, 154, 154);
+    }
+    .btn-secondary:hover{
+        background: rgb(28, 154, 154);
+        color: black
+        ;
+    }
+    .hero{
+        margin-right: 128px;
+    }
+      .hero img{
+      width: 250px;
+      
+       }
+       .hero .right{
+        color: white;
+        margin-top: -2rem;
+       }
+       .hero .right h6{
+        font-size: 1.6rem;
+        color:rgb(28, 154, 154) ;
+        margin-bottom: 0.5rem;
+       }
+       .hero .right h1{
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-bottom: 7px;
+       }
+       .hero .right h1 span{
+        color:rgb(28, 154, 154) ;
+       }
+       .hero .right p{
+        line-height: 1.7;
+    margin-bottom: 23px;
+    font-size: 13px;
+       }
+       .flex-1{
+        flex: 1;
+        font-size: 19px;
+       }
+       .justify-center{
+        justify-content: center;
+       }
+      section{
+        padding: 6rem 0;
+      }
+      .para h2{
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+      .para h3{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+      .para h2 span{
+        color:rgb(28, 154, 154) ;
+      }
+      .para p{
+        width: 360px;
+        font-family: sans-serif;
+        color:rgb(68, 67, 67) ;
+        line-height: 1.8;
+      }
+      .social{
+        display: flex;
+      
+
+      }
+      .social1{
+        height: 25px;
+        width: 25px;
+      }
+      .social a{
+        background: black;
+    border-radius: 50%;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 11px;
+    text-align: center;
+      }
+      .social a:hover{
+        cursor: pointer;
+        background-color: white;
+      }
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        
+    <div class="container">
+        <nav class="flex items-center justify-between">
+          <div class="left flex items-center justify-between
+          "  >
+            <div class="branding">
+            <img src="./images/logo.svg" alt="">
+             </div>
+        <div>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Pages</a>
+            <a href="">Blog</a>
+
+        </div>
+    </div> 
+        <div class="right">
+            <button class="btn btn-primary">Contact</button></div>
+    </nav>
+    <div class="hero flex items-center justify-between ">
+        <div class="left flex-1 flex justify-center">
+            <img src="./images/man.png" alt="">
+        </div>
+        <div class="right flex-1">
+            <h6>Jonathan Vics</h6>
+            <h1>I'm a Creative <br><span>Designer</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia qui reprehenderit aut, mollitia provident ipsum exercitationem necessitatibus porro soluta id facilis repellat? Corporis suscipit laboriosam veniam, facilis consequuntur voluptate?</p>
+            <div>
+                <button class="btn btn-secondary">DOWNLOAD CV</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</header>
+<section class="about">
+    <div class="container flex items-center">
+        <div class="hero flex-1">
+            <img src="./images/man-2.png" alt="">
+        </div>
+        <div class="para">
+            <h2>About <span>Me</span></h2>
+            <h3>Hello i'm Jonathan Vics.</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque facilis culpa corporis deserunt error minus laudantium tempore, natus vero ut reiciendis beatae deleniti. Numquam, recusandae reiciendis temporibus perspiciatis veritatis animi praesentium qui adipisci, alias, omnis itaque? Tempore voluptates ex harum!</p>
+            <div class="social">
+                
+                <a href=""><img class="social1" src="./images/facebook.png" alt=""></a>
+                <a href=""><img class="social1" src="./images/twitter.png" alt=""></a>
+                <a href=""><img class="social1" src="./images/instagram.png" alt=""></a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

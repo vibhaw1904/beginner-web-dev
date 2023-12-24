@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            background-color: #03fca1;
+            font-family: monospace;
+        }
+        
+        div {
+            background-color: #f5ec42;
+            padding: 25px;
+            border-radius: 56px;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border: 2px solid black;
+            transform: translate(-50%, -50%);
+        }
+        
+        h3 {
+            font-size: 15px;
+        }
+        
+        #billamount {
+            border-radius: 5px;
+        }
+        
+        #numpeople {
+            border-radius: 5px;
+        }
+        
+        #service {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Tip calculator</h1>
+        <hr>
+        <form>
+            <p>Total bill amount:</p>
+            <input type="text" id="billamount">
+            <p>Quality of service:</p>
+
+            <select name="" id="service">
+            <option value="0.05">bad-5%</option>
+            <option value="0.1">great-10%</option>
+            <option value="0.2">excellent-20%</option>
+        </select>
+            <p>Number of People:</p>
+            <input type="text" id="numpeople">
+        </form>
+        <button id="calculate" onclick="calculateTip()">calculate</button>
+
+        <h3 id="result"></h3>
+    </div>
+    <script src="tip.js"></script>
+</body>
+
+</html>

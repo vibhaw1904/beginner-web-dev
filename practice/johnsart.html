@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        
+        .h1 {
+            text-align: center;
+            border: 8px solid blue;
+            border-radius: 10px;
+        }
+        
+        .p {
+            background-color: rgb(120, 197, 120);
+            padding: 45px;
+        }
+        
+        img {
+            border: 5px solid yellow;
+            filter: grayscale(100%);
+        }
+        
+        img:hover {
+            filter: grayscale(0%);
+        }
+        
+        #rate>p {
+            float: left;
+            padding-left: 180px;
+        }
+        
+        #rate {
+            display: none;
+        }
+        
+        #paintings:hover #rate {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h1">
+        <h1>Johns art</h1>
+    </div>
+    <div class="p">
+        <p>Welcome to my paintings</p>
+    </div>
+    <div id="paintings">
+        <img src="d1.jpg" alt="">
+        <img src="d2.jpg" alt="">
+        <img src="d3.jpg" alt="">
+        <img src="d4.jpg" alt="">
+
+        <div id="rate">
+            <p>100$</p>
+            <p>120$</p>
+            <p>90$</p>
+            <p>110$</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

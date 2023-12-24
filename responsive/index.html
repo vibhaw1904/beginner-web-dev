@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .up{
+           
+            position: absolute;
+    width: 100%;
+    background-color: black;
+        }
+        ul{
+            list-style-type: none;
+        }a{
+            color: rgb(107, 48, 48);
+            float: left;
+            transition: all 1s ease;
+            text-decoration: none;
+            padding: 20px;
+        }
+        a.active{
+            background-color: white;
+       width: 43px;
+    border-radius: 8px;
+    height: 18px;
+    align-items: center;
+    margin: 12px 21px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    padding: 8px 23px;
+        }
+        a:hover{
+            background-color: white;
+       width: 48px;
+    border-radius: 8px;
+    height: 18px;
+    align-items: center;
+    margin: 12px 21px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    padding: 8px 23px;
+    padding-left: 10px;
+    /* box-shadow: 0 0 1px black; */
+  /* margin-top: 0.01pc;
+        } */
+    }
+        @media screen and (max-width: 600px) {
+   a:not(:first-child) {display: none;}
+   a {
+    float: right;
+    display: block;
+  }
+  @media screen and (max-width: 600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+  .up {position: relative;
+
+}
+ 
+   a {
+    float: none;
+    display: ;
+    text-align: center;
+  }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="up">
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

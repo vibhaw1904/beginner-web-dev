@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-size: cover;
+        }
+        
+        h2 {
+            align-items: center;
+            font-size: 12px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: white;
+        }
+        
+        .clock {
+            display: flex;
+        }
+        
+        .clock div {
+            margin: 5px;
+            position: relative;
+        }
+        
+        .clock span {
+            width: 100px;
+            height: 80px;
+            background-color: rgb(68, 68, 40);
+            opacity: .8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+        }
+        
+        .clock #text {
+            height: 40px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: rgb(63, 102, 63);
+            opacity: 0.8;
+        }
+        
+        .clock #ampm {
+            bottom: 0;
+            height: 40px;
+            width: 30px;
+            font-size: 15px;
+            position: absolute;
+            background-color: rgb(209, 146, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="Digitalclock">Digital clock</h2>
+    <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span id="text">Hours</span>
+        </div>
+        <div>
+            <span id="Minutes">00</span>
+            <span id="text">Minutes</span>
+        </div>
+        <div>
+            <span id="seconds">00</span>
+            <span id="text">seconds</span>
+        </div>
+        <div>
+            <span id="ampm">AM</span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
